@@ -1,0 +1,21 @@
+{
+  "name": "scorenix-types",
+  "version": "0.0.1",
+  "description": "Common types used by the Scorenix JavaScript SDKs",
+  "license": "BSD-3-Clause",
+  "author": "Demyasoft",
+  "main": "./src/index.js",
+  "repository": "git://github.com:demyasoft/scorenix-types.git",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.15.0"
+  },
+  "engines": {
+    "node": ">= 6"
+  }
+}
