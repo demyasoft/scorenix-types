@@ -1,7 +1,7 @@
-import config from './config';
-import Message from './message';
+const config = require('./config');
+const Message = require('./message');
 
-export default class Exception extends Message
+class Exception extends Message
 {
     /**
      * @param {Error} error 
@@ -54,3 +54,5 @@ export default class Exception extends Message
         this.stack.push(stack);
     }
 }
+
+module.exports = Exception;

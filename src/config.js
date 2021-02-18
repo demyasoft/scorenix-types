@@ -11,4 +11,4 @@ const LoggingConfig = Object.freeze({
     }
 });
 
-export default LoggingConfig;
+module.exports = LoggingConfig;

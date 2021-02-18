@@ -1,6 +1,6 @@
-import LoggingConfig from './config';
+const LoggingConfig = require('./config');
 
-export default class Message
+class Message
 {
     /**
      * @param {String} message 
@@ -69,3 +69,5 @@ export default class Message
         this.version = __VERSION__;
     }
 }
+
+module.exports = Message;

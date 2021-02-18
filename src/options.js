@@ -27,4 +27,4 @@ const ScorenixOptions = {
     environment: null
 };
 
-export default ScorenixOptions;
+module.exports = ScorenixOptions;

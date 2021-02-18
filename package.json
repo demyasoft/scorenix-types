@@ -6,9 +6,6 @@
   "author": "Demyasoft",
   "main": "./src/index.js",
   "repository": "git://github.com:demyasoft/scorenix-types.git",
-  "scripts": {
-    "build": "webpack"
-  },
   "devDependencies": {
     "@babel/core": "^7.12.17",
     "@babel/preset-env": "^7.12.17",

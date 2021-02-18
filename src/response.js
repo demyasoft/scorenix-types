@@ -1,4 +1,4 @@
-export default class Response
+class Response
 {
     /**
      * @param {String} id
@@ -21,3 +21,5 @@ export default class Response
         this.detail = detail || null;
     }
 }
+
+module.exports = Response;
