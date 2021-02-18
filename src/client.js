@@ -139,9 +139,15 @@ export default class BaseLogClient
     }
     
     /**
-    * Initializes the erronetic logging service.
+    * @public
+    * @description Initializes the erronetic logging service.
     * @param {String} key - the client application api key
-    * @param {ScorenixOptions} options - Lognetic options
+    * @param {Object} options
+    * @param {Boolean} options.debug
+    * @param {String} options.uri
+    * @param {String} options.method
+    * @param {String} options.protocol
+    * @param {String} options.environment
     */
     init(key, options)
     {      
@@ -180,18 +186,21 @@ export default class BaseLogClient
     }
 
     /**
+     * @public
      * @description Generate and set a unique client Id
      */
     generateClientId() {}
 
     /**
-    * Captures a custom message.
+    * @public
+    * @description Sends a custom info-level message.
     * @param {String} message the custom message to log
     */
     writeMessage(message) {}
 
     /**
-    * Captures an event.
+    * @public
+    * @description Captures an event message
     * @param {String} id event id
     * @param {String} message event message
     * @param {String} action event action
@@ -199,26 +208,30 @@ export default class BaseLogClient
     writeEvent(id, message, action) {}
 
     /**
-    * Captures a custom error exception.
+    * @public
+    * @description Sends a custom error exception.
     * @param {Error} error Error object to log.
     * @param {Object} data additional data to send(must contains values of string, number, or boolean)
     */
     writeException(error, data) {}
 
     /**
-    * Assigns custom meta data that will be sent along with each exception.
+    * @public
+    * @description Sets custom metadata that will be submitted with each message
     * @param {Object|Array} data custom meta data, can be user to store user details
     */
     setMetaContext(data) {}
 
     /**
-    * Allows you to set your application version.
+    * @public
+    * @description Sets the user client version metadata
     * @param {String} version App version info
     */
     setAppVersion(version) {}
 
     /**
-    * Allows you to set your the current user.
+    * @public
+    * @description Sets the client's current user metadata
     * @param {String} username Username of the currently logged on user
     */
     setAppUser(username) {}
