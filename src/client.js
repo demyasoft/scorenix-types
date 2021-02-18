@@ -1,9 +1,9 @@
-const ScorenixOptions = require('./options');
-const Exception = require('./exception');
-const Response = require('./response');
-const Message = require('./message');
+import ScorenixOptions from './options';
+import Exception from './exception';
+import Response from './response';
+import Message from './message';
 
-class BaseLogClient
+export default class BaseLogClient
 {
     constructor()
     {
@@ -223,5 +223,3 @@ class BaseLogClient
     */
     setAppUser(username) {}
 }
-
-module.exports = BaseLogClient;

@@ -1,7 +1,7 @@
-const LoggingConfig = require('./config');
-const Message = require('./message');
+import LoggingConfig from './config';
+import Message from './message';
 
-class Event extends Message
+export default class Event extends Message
 {
     /**
      * @param {String} id
@@ -22,5 +22,3 @@ class Event extends Message
         this.action = action;
     }
 }
-
-module.exports = Event;
