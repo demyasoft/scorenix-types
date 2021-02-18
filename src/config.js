@@ -1,4 +1,4 @@
-export default Object.freeze({
+const LoggingConfig = Object.freeze({
     LOGS: {
         INFO: 'info',
         WARN: 'warn',
@@ -10,3 +10,5 @@ export default Object.freeze({
         EVENT: 'event'
     }
 });
+
+export default LoggingConfig;

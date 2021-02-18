@@ -4,13 +4,13 @@ import Message from './message';
 export default class Exception extends Message
 {
     /**
-     * @param {String} message 
+     * @param {Error} error 
      */
-    constructor(message, handled = true)
+    constructor(error, handled = true)
     {
-        super(message);
+        super(error.message);
         this.name = config.LOG_TRIGGER.ERROR;
-        
+                
         /**
          * @type {Boolean}
          */
@@ -27,6 +27,8 @@ export default class Exception extends Message
          * @type {String}
          */
         this.level = config.LOGS.ERROR;
+
+        this.addStack(error);
     }    
 
     addStack(error)

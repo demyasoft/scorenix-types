@@ -1,4 +1,4 @@
-import config from './config';
+import LoggingConfig from './config';
 
 export default class Message
 {
@@ -10,7 +10,7 @@ export default class Message
         /**
          * @type {String}
          */
-        this.name = config.LOG_TRIGGER.MESSAGE;
+        this.name = LoggingConfig.LOG_TRIGGER.MESSAGE;
         /**
          * @type {String}
          */
@@ -47,6 +47,10 @@ export default class Message
          * @type {String}
          */
         this.clientId = null;
+        /**
+         * @type {String}
+         */
+        this.environment = null;
         /**
          * @type {String}
          */

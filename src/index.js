@@ -1,4 +1,4 @@
-export {default as BaseClient} from './client';
+export {default as BaseLogClient} from './client';
 
 export {default as Event} from './event';
 

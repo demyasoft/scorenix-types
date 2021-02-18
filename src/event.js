@@ -1,4 +1,4 @@
-import config from './config';
+import LoggingConfig from './config';
 import Message from './message';
 
 export default class Event extends Message
@@ -11,7 +11,7 @@ export default class Event extends Message
     constructor(id, message, action)
     {
         super(message);
-        this.name = config.LOG_TRIGGER.EVENT;
+        this.name = LoggingConfig.LOG_TRIGGER.EVENT;
         /**
          * @type {String}
          */
