@@ -1,6 +1,6 @@
 {
   "name": "scorenix-types",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Common types used by the Scorenix JavaScript SDKs",
   "license": "BSD-3-Clause",
   "author": "Demyasoft",
