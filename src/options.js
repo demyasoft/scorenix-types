@@ -1,5 +1,5 @@
 
-const API_URI = '//scorenix.azurewebsites.net';
+const API_URI = '{SERVER_URI}';
 
 const ScorenixOptions = {
     /**
